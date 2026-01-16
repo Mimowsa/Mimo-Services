@@ -1,0 +1,117 @@
+.hero {
+  padding-top: 40px;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  margin-bottom: 16px;
+}
+
+.heroKicker {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--color-slate);
+}
+
+.emph {
+  position: relative;
+  display: inline-block;
+  color: var(--color-ink);
+  padding: 0 4px;
+}
+
+.emph::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 107, 107, 0.2),
+    rgba(242, 181, 68, 0.7),
+    rgba(113, 14, 14, 0.2)
+  );
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-size: 200% 100%;
+  background-position: 50% 50%;
+  animation: underlineReveal 1.2s ease 0.1s forwards,
+    underlineSweep 3s ease-in-out 0.6s infinite;
+}
+
+@keyframes underlineReveal {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes underlineSweep {
+  0% {
+    filter: brightness(1);
+    background-position: 0% 50%;
+  }
+  50% {
+    filter: brightness(1.2);
+    background-position: 100% 50%;
+  }
+  100% {
+    filter: brightness(1);
+    background-position: 0% 50%;
+  }
+}
+
+.projectList {
+  padding: 40px 0;
+  position: relative;
+}
+
+.projectList::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(15, 107, 107, 0.08), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(242, 181, 68, 0.1), transparent 55%);
+  pointer-events: none;
+}
+
+.projectList :global(.container) {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(11, 22, 35, 0.06);
+}
+
+.projectList :global(.card) {
+  margin-bottom: 28px;
+}
+
+.projectList :global(.card:last-child) {
+  margin-bottom: 0;
+}
+
+.cta {
+  padding-bottom: 40px;
+}
+
+.ctaCard {
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .ctaCard {
+    grid-template-columns: 1fr;
+  }
+}

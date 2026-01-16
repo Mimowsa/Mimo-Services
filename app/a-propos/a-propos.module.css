@@ -1,0 +1,250 @@
+.hero {
+  padding-top: 40px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.heroImage {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+  transform: translateX(-12px);
+  animation: heroImageSlide 0.8s ease forwards;
+}
+
+.heroImage img {
+  border-radius: calc(var(--radius-lg) - 8px);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroContent {
+  animation: heroFade 0.8s ease forwards;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--color-slate);
+  max-width: 520px;
+}
+
+.whatGrid {
+  display: grid;
+  gap: 28px;
+}
+
+.sectionIntro h2 {
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  margin-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.iconCard {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 12px;
+  text-align: center;
+  justify-items: center;
+  opacity: 0;
+  animation: cardRise 0.9s ease forwards;
+}
+
+.iconCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.iconCard:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.iconCard:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.iconCard img {
+  width: 184px;
+  height: 184px;
+  object-fit: contain;
+  align-items: center;
+}
+
+.valueSection {
+  padding: 20px 0;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.valueStat {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  animation: statPulse 1.2s ease forwards;
+}
+
+.valueStatLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--color-steel);
+}
+
+.valueStatValue {
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-ink);
+  position: relative;
+}
+
+.valueStatValue::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 10px;
+  background: linear-gradient(90deg, rgba(15, 107, 107, 0.25), rgba(242, 181, 68, 0.55));
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineReveal 1.1s ease 0.2s forwards;
+}
+
+.credibility {
+  padding-bottom: 20px;
+}
+
+.credibilityGrid {
+  display: grid;
+  gap: 24px;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.logoGrid img {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logoGrid img:hover {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.cta {
+  padding-bottom: 40px;
+}
+
+.ctaCard {
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    grid-template-columns: 1fr;
+  }
+
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .logoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes statPulse {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes underlineReveal {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

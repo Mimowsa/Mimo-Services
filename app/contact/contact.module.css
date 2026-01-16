@@ -1,0 +1,64 @@
+.hero {
+  padding-top: 40px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.lead {
+  color: var(--color-slate);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  display: grid;
+  gap: 10px;
+  color: var(--color-slate);
+}
+
+.form {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 16px;
+}
+
+.label {
+  display: grid;
+  gap: 8px;
+  color: var(--color-slate);
+  font-weight: 600;
+}
+
+.label input,
+.label textarea {
+  border: 1px solid rgba(11, 22, 35, 0.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+
+.label input:focus,
+.label textarea:focus {
+  outline: 2px solid rgba(15, 107, 107, 0.3);
+  border-color: rgba(15, 107, 107, 0.6);
+}
+
+.formNote {
+  font-size: 0.85rem;
+  color: var(--color-steel);
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}

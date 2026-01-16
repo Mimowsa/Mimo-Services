@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  border: 1px solid rgba(11, 22, 35, 0.08);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #0f6b6b 0%, #f2b544 100%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-left: 12px;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.period {
+  color: var(--color-steel);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.logoWrap {
+  background: var(--color-cloud);
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(11, 22, 35, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.content {
+  display: grid;
+  gap: 18px;
+  color: var(--color-slate);
+  padding-left: 12px;
+}
+
+.content > div {
+  display: grid;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 12px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,136 @@
+:root {
+  --font-sans: "Space Grotesk", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-serif: "DM Serif Text", "Times New Roman", serif;
+  --color-ink: #0b1623;
+  --color-slate: #1b2a3a;
+  --color-steel: #41556b;
+  --color-mist: #e6eef6;
+  --color-cloud: #f7f9fb;
+  --color-accent: #0f6b6b;
+  --color-accent-soft: #e1f1f0;
+  --color-gold: #f2b544;
+  --shadow-soft: 0 20px 50px rgba(11, 22, 35, 0.12);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --max-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: radial-gradient(circle at top, #eef4f8 0%, #fdfefe 40%, #f2f6f8 100%);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 40px 24px 120px;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-slate);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 14px 30px rgba(11, 22, 35, 0.18);
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(11, 22, 35, 0.22);
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border: 1px solid rgba(11, 22, 35, 0.2);
+  box-shadow: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.tag {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--color-mist);
+  color: var(--color-steel);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  main {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 24px 18px 80px;
+  }
+}
