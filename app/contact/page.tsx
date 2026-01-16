@@ -73,7 +73,7 @@ export default function ContactPage() {
               <textarea
                 name="message"
                 rows={5}
-                placeholder="Décrivez le processus, les équipes impliquées et l'urgence."
+                placeholder="Décrivez le processus, les équipes impliquées et l&apos;urgence."
                 required
               />
             </label>
