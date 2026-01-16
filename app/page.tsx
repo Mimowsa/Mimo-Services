@@ -57,7 +57,7 @@ export default function HomePage() {
       <section className={styles.trustSection}>
         <div className={`container ${styles.trustGrid}`}>
           <div>
-            <p className="eyebrow">Ils m'ont fait confiance</p>
+            <p className="eyebrow">Ils m&apos;ont fait confiance</p>
             <h2>Des contextes exigeants, des solutions concrètes</h2>
             <p className={styles.trustLead}>
               Des missions Power Platform menées dans des environnements
@@ -105,14 +105,14 @@ export default function HomePage() {
             <p className="eyebrow">Engagement</p>
             <h2>Un consultant qui parle technique et métier</h2>
             <p>
-              Mes missions sont cadrées autour d'objectifs clairs : réduction des
+              Mes missions sont cadrées autour d&apos;objectifs clairs : réduction des
               délais, fiabilité des données et meilleure collaboration. Chaque
-              livraison est accompagnée d'un plan d'usage et de documentation.
+              livraison est accompagnée d&apos;un plan d&apos;usage et de documentation.
             </p>
           </div>
             <div className={styles.metrics}>
               <div>
-                <p className={styles.metricValue}>Jusqu'à 50%</p>
+                <p className={styles.metricValue}>Jusqu&apos;à 50%</p>
                 <p className={styles.metricLabel}>
                   Gain de temps selon les processus automatisés
                 </p>
@@ -120,7 +120,7 @@ export default function HomePage() {
               <div>
                 <p className={styles.metricValue}>Automatisation</p>
                 <p className={styles.metricLabel}>
-                  L'application travaille pendant que l'équipe se concentre
+                  L&apos;application travaille pendant que l&apos;équipe se concentre
                 </p>
               </div>
               <div>
@@ -140,7 +140,7 @@ export default function HomePage() {
             <h2>Une approche pragmatique, adaptée aux enjeux réels des entreprises</h2>
             <p>
               Chaque projet Power Platform commence par une compréhension claire
-              du besoin métier. L'objectif n'est pas d'automatiser pour
+              du besoin métier. L&apos;objectif n&apos;est pas d&apos;automatiser pour
               automatiser, mais de simplifier les processus, fiabiliser les
               validations et livrer des solutions réellement utilisées par les
               équipes.
@@ -151,15 +151,15 @@ export default function HomePage() {
               <h3>1. Compréhension du contexte métier</h3>
               <p>
                 Analyse des processus existants, des contraintes terrain et des
-                usages réels afin d'identifier les leviers d'amélioration les
+                usages réels afin d&apos;identifier les leviers d&apos;amélioration les
                 plus pertinents.
               </p>
             </div>
             <div className="card">
               <h3>2. Conception de la solution Power Platform</h3>
               <p>
-                Définition d'une solution adaptée à l'écosystème Microsoft 365,
-                avec un focus sur la clarté, la maintenabilité et l'expérience
+                Définition d&apos;une solution adaptée à l&apos;écosystème Microsoft 365,
+                avec un focus sur la clarté, la maintenabilité et l&apos;expérience
                 utilisateur.
               </p>
             </div>
@@ -180,8 +180,8 @@ export default function HomePage() {
             <p className="eyebrow">Contact</p>
             <h2>Parlons de votre projet Power Platform</h2>
             <p>
-              Besoin d'une solution Power Apps ou Power
-              Automate ? Je réponds sous 48h avec une proposition d'approche.
+              Besoin d&apos;une solution Power Apps ou Power
+              Automate ? Je réponds sous 48h avec une proposition d&apos;approche.
             </p>
           </div>
           <Link href="/contact" className="button">

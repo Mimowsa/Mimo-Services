@@ -23,7 +23,7 @@ export default function ContactPage() {
             <h1>Discutons de votre projet Power Platform</h1>
             <p className={styles.lead}>
               Indiquez votre contexte et vos objectifs. Je réponds sous 48h avec
-              une proposition d'approche et une estimation de charge.
+              une proposition d&apos;approche et une estimation de charge.
             </p>
             <div className={styles.contactInfo}>
               <p>

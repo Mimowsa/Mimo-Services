@@ -33,8 +33,8 @@ export default function AboutPage() {
             <p className="eyebrow">À propos</p>
             <h1>Développeur Power Platform</h1>
             <p className={styles.lead}>
-              J'aide les entreprises à automatiser leurs processus et à gagner
-              du temps grâce à l'écosystème Microsoft 365.
+              J&apos;aide les entreprises à automatiser leurs processus et à gagner
+              du temps grâce à l&apos;écosystème Microsoft 365.
             </p>
           </div>
         </div>
@@ -96,12 +96,12 @@ export default function AboutPage() {
             <h2>Une approche orientée valeur métier</h2>
             <p>
               Mon approche est orientée valeur métier: comprendre le besoin
-              avant d'automatiser, simplifier avant de complexifier, et livrer
+              avant d&apos;automatiser, simplifier avant de complexifier, et livrer
               des solutions réellement utilisées.
             </p>
           </div>
-          <div className={styles.valueStat} aria-label="Jusqu'à 50% de temps gagné">
-            <p className={styles.valueStatLabel}>Jusqu'à</p>
+          <div className={styles.valueStat} aria-label="Jusqu&apos;à 50% de temps gagné">
+            <p className={styles.valueStatLabel}>Jusqu&apos;à</p>
             <p className={styles.valueStatValue}>50%</p>
             <p className={styles.valueStatLabel}>de temps gagné</p>
           </div>

@@ -18,7 +18,7 @@ export default function SiteFooter() {
         </div>
         <div className={styles.meta}>
           <p>Paris / Île-de-France</p>
-          <p>Disponibilités: missions courte et longue</p>
+          <p>Disponibilités: À temps plein</p>
         </div>
       </div>
       <div className={styles.bottom}>

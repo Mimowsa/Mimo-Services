@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         <div className="container">
           <h1>Mes projets</h1>
           <p className={styles.heroKicker}>
-            Jusqu'à <span className={styles.emph}>50 %</span> de temps gagné
+            Jusqu&apos;à <span className={styles.emph}>50 %</span> de temps gagné
             grâce à la Power Platform
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
         <div className={`container ${styles.ctaCard}`}>
           <div>
             <p className="eyebrow">Votre contexte</p>
-            <h2>Besoin d'une automatisation Microsoft 365 ?</h2>
+            <h2>Besoin d&apos;une automatisation Microsoft 365 ?</h2>
             <p>
               Parlons de vos workflows internes: Power Apps pour les interfaces,
               Power Automate pour les validations, et des intégrations Microsoft
