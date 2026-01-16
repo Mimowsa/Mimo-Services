@@ -289,4 +289,38 @@
   .heroStats {
     grid-template-columns: 1fr;
   }
+
+  .heroActions {
+    flex-direction: column;
+  }
+
+  .heroActions .button {
+    width: 100%;
+  }
+
+  .heroVisual {
+    padding: 14px;
+  }
+
+  .trustSection {
+    padding: 20px 0 36px;
+  }
+
+  .carousel {
+    padding: 12px 0;
+  }
+
+  .logoCard {
+    min-width: 140px;
+    height: 80px;
+  }
+
+  .logoCard img {
+    max-width: 100px;
+    max-height: 44px;
+  }
+
+  .metrics > div {
+    padding: 16px;
+  }
 }

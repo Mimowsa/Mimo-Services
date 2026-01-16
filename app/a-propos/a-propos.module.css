@@ -12,10 +12,12 @@
 .heroImage {
   background: #fff;
   border-radius: var(--radius-lg);
-  padding: 18px;
+  padding: 14px;
   box-shadow: var(--shadow-soft);
   transform: translateX(-12px);
   animation: heroImageSlide 0.8s ease forwards;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .heroImage img {
@@ -23,6 +25,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  max-height: 520px;
 }
 
 .heroContent {
@@ -193,6 +196,20 @@
 
   .logoGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .heroImage {
+    padding: 12px;
+  }
+
+  .iconCard {
+    padding: 20px;
+  }
+
+  .ctaCard {
+    padding: 24px;
   }
 }
 
