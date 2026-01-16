@@ -11,7 +11,7 @@ export default function HomePage() {
             <span className="badge">Freelance Power Platform - Paris</span>
             <h1>Optimisez vos processus métiers avec la Power Platform</h1>
             <p className={styles.lead}>
-              Automatisation rapide, fiable et adoptée pour vos équipes.
+              Automatisation rapide, fiable et adaptée pour vos équipes.
             </p>
             <div className={styles.heroActions}>
               <Link href="/contact" className="button">
