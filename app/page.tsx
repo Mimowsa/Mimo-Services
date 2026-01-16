@@ -49,6 +49,7 @@ export default function HomePage() {
               width={560}
               height={420}
               priority
+              className={styles.heroImage}
             />
           </div>
         </div>

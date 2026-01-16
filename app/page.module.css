@@ -55,6 +55,12 @@
   box-shadow: var(--shadow-soft);
 }
 
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .sectionGrid {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
