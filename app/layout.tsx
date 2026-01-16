@@ -4,6 +4,11 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import "@/app/globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1
+};
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",

@@ -45,6 +45,31 @@
   gap: 20px;
 }
 
+.menuButton {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 22, 35, 0.1);
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.menuBar {
+  width: 20px;
+  height: 2px;
+  background: var(--color-ink);
+  border-radius: 999px;
+}
+
+.desktopCta {
+  display: inline-flex;
+}
+
+
 .navLink {
   font-weight: 500;
   color: var(--color-slate);
@@ -57,14 +82,51 @@
 
 @media (max-width: 900px) {
   .inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr auto;
     justify-items: start;
   }
 
   .nav {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    position: absolute;
+    top: 72px;
+    right: 24px;
+    left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(11, 22, 35, 0.08);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
+
+  .navOpen {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .menuButton {
+    display: inline-flex;
+    justify-self: end;
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .logo {
+    gap: 0;
+  }
+
 }
 
 @media (max-width: 640px) {

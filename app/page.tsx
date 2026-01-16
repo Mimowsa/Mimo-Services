@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroContent}>
             <span className="badge">Freelance Power Platform - Paris</span>
-            <h1>Optimisez vos processus métiers avec Power Platform</h1>
+            <h1>Optimisez vos processus métiers avec la Power Platform</h1>
             <p className={styles.lead}>
               Automatisation rapide, fiable et adoptée pour vos équipes.
             </p>
@@ -31,7 +31,7 @@ export default function HomePage() {
               <div>
                 <p className={styles.statValue}>Multi-métier</p>
                 <p className={styles.statLabel}>
-                  RH, documentaire, validation, process internes
+                  RH, gestion des stocks, finance, process internes
                 </p>
               </div>
               <div>
@@ -138,7 +138,7 @@ export default function HomePage() {
         <div className={`container ${styles.sectionGrid}`}>
           <div className={styles.sectionIntro}>
             <p className="eyebrow">Approche</p>
-            <h2>Une approche pragmatique, adaptée aux enjeux réels des entreprises</h2>
+            <h2>Une approche pragmatique adaptée aux enjeux réels des entreprises</h2>
             <p>
               Chaque projet Power Platform commence par une compréhension claire
               du besoin métier. L&apos;objectif n&apos;est pas d&apos;automatiser pour
