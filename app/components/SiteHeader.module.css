@@ -69,6 +69,32 @@
   display: inline-flex;
 }
 
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.langToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 22, 35, 0.12);
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.langToggle:hover,
+.langToggle:focus-visible {
+  border-color: rgba(11, 22, 35, 0.3);
+}
+
 
 .navLink {
   font-weight: 500;
@@ -117,6 +143,10 @@
 
   .desktopCta {
     display: none;
+  }
+
+  .actions {
+    justify-self: end;
   }
 
   .logoText {

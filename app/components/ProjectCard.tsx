@@ -2,7 +2,19 @@ import Image from "next/image";
 import styles from "@/app/components/ProjectCard.module.css";
 import type { Project } from "@/data/projects";
 
-export default function ProjectCard({ project }: { project: Project }) {
+type ProjectLabels = {
+  context: string;
+  solution: string;
+  results: string;
+};
+
+export default function ProjectCard({
+  project,
+  labels
+}: {
+  project: Project;
+  labels: ProjectLabels;
+}) {
   return (
     <article className={`card ${styles.card}`}>
       <div className={styles.header}>
@@ -23,19 +35,19 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className={styles.content}>
         <div>
-          <h4 className={styles.label}>Contexte client</h4>
+          <h4 className={styles.label}>{labels.context}</h4>
           {project.context.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
         <div>
-          <h4 className={styles.label}>Solution mise en place</h4>
+          <h4 className={styles.label}>{labels.solution}</h4>
           {project.solution.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
         <div>
-          <h4 className={styles.label}>Résultats et bénéfices</h4>
+          <h4 className={styles.label}>{labels.results}</h4>
           {project.results.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}

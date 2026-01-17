@@ -2,25 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
+import { getContent } from "@/app/i18n/content";
+import type { Locale } from "@/app/i18n/locale";
+import { getAlternatePathname, getRoute } from "@/app/i18n/routes";
 import styles from "@/app/components/SiteHeader.module.css";
 
-const navItems = [
-  { href: "/mes-projets", label: "Mes projets" },
-  { href: "/a-propos", label: "À propos" }
-];
-
-export default function SiteHeader() {
+export default function SiteHeader({ locale }: { locale: Locale }) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const content = useMemo(() => getContent(locale), [locale]);
+  const alternatePathname = getAlternatePathname(pathname, locale);
 
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <Link href="/" className={styles.logo}>
+        <Link href={getRoute("home", locale)} className={styles.logo}>
           <span className={styles.logoMark}>
             <Image
               src="/img/logo.png"
-              alt="Logo Mimo Services"
+              alt={content.header.logoAlt}
               width={36}
               height={36}
             />
@@ -30,7 +32,7 @@ export default function SiteHeader() {
         <button
           className={styles.menuButton}
           type="button"
-          aria-label="Ouvrir le menu"
+          aria-label={content.header.menuLabel}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}
         >
@@ -40,9 +42,12 @@ export default function SiteHeader() {
         </button>
         <nav
           className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}
-          aria-label="Navigation principale"
+          aria-label={content.header.navLabel}
         >
-          {navItems.map((item) => (
+          {[
+            { href: getRoute("projects", locale), label: content.header.nav.projects },
+            { href: getRoute("about", locale), label: content.header.nav.about }
+          ].map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -53,9 +58,22 @@ export default function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Link href="/contact" className={`button ${styles.desktopCta}`}>
-          Me contacter
-        </Link>
+        <div className={styles.actions}>
+          <Link
+            href={alternatePathname}
+            className={styles.langToggle}
+            aria-label={content.header.languageToggle.ariaLabel}
+            onClick={() => setIsOpen(false)}
+          >
+            {content.header.languageToggle.label}
+          </Link>
+          <Link
+            href={getRoute("contact", locale)}
+            className={`button ${styles.desktopCta}`}
+          >
+            {content.header.cta}
+          </Link>
+        </div>
       </div>
     </header>
   );
