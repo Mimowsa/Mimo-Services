@@ -1,9 +1,8 @@
 import type { Locale } from "@/app/i18n/locale";
 
 export type Project = {
-  company: string;
+  sector: string;
   period: string;
-  logo: string;
   title: string;
   context: string[];
   solution: string[];
@@ -14,166 +13,156 @@ export type Project = {
 const projectsByLocale: Record<Locale, Project[]> = {
   fr: [
     {
-      company: "Danone",
+      sector: "Agroalimentaire 🍏",
       period: "09/2025 - Actuel",
-      logo: "/img/danone.png",
-      title:
-        "Danone - Digitalisation et automatisation de processus métiers Power Platform",
+      title: "Digitalisation de processus métiers Power Platform",
       context: [
-        "Danone évolue dans un environnement grand groupe où de nombreux processus métiers sont encore gérés de manière manuelle ou semi-automatisée.",
-        "Les équipes utilisent massivement Microsoft 365, mais les échanges entre outils, les validations et le suivi des demandes manquent de fluidité. Cela entraîne des pertes de temps, des risques d'erreurs et une faible visibilité sur l'état réel des processus internes.",
-        "Ce type de situation est très courant dans les grandes entreprises: les outils existent, mais ils ne sont pas exploités de manière cohérente."
+        "Organisation multi-sites avec des processus encore partiellement manuels.",
+        "Utilisation intensive de Microsoft 365, mais validations et suivis dispersés entre plusieurs outils.",
+        "Objectif: fluidifier les demandes, fiabiliser les données et améliorer la visibilité métier."
       ],
       solution: [
-        "J'ai accompagné les équipes dans la conception et le développement de solutions basées sur la Power Platform, en m'appuyant principalement sur Power Apps et Power Automate.",
-        "L'objectif était de transformer des processus manuels en flux digitaux simples, accessibles et adaptés aux usages métiers. En parallèle, j'ai travaillé sur l'analyse des besoins, l'amélioration continue des processus et l'accompagnement des utilisateurs."
+        "Conception et développement de solutions Power Apps et Power Automate adaptées aux usages terrain.",
+        "Structuration des workflows, cadrage des besoins et accompagnement des équipes pour assurer l'adoption."
       ],
       results: [
-        "Les équipes ont gagné en efficacité grâce à des processus plus fluides et mieux structurés.",
-        "Les tâches manuelles ont été réduites, les validations fiabilisées et la visibilité sur les processus améliorée. Les utilisateurs disposent d'outils plus clairs, mieux intégrés à leur environnement Microsoft 365."
+        "Processus plus lisibles, délais de traitement réduits et meilleure traçabilité.",
+        "Outils intégrés à l'écosystème Microsoft 365 avec un usage plus homogène."
       ],
       stack: ["Power Apps", "Power Automate", "Microsoft 365"]
     },
     {
-      company: "EDF",
+      sector: "Énergie ⚡",
       period: "03/2025 - 08/2025",
-      logo: "/img/edf.png",
-      title: "EDF - Automatisation des processus documentaires et des validations",
+      title: "Automatisation des flux documentaires et validations",
       context: [
-        "Chez EDF, certains processus documentaires reposaient sur des échanges manuels entre plusieurs acteurs, avec peu de visibilité sur l'avancement des validations.",
-        "Les documents circulaient par email ou via des fichiers partagés, ce qui rendait le suivi complexe et augmentait les risques d'oubli ou de retard.",
-        "Ce type de problématique est fréquent dès que plusieurs équipes doivent valider, approuver ou suivre des documents critiques."
+        "Documents critiques nécessitant plusieurs étapes de validation entre équipes.",
+        "Suivi manuel par email ou fichiers partagés, peu de visibilité en temps réel.",
+        "Besoin de fiabiliser la chaîne documentaire et d'accélérer les décisions."
       ],
       solution: [
-        "J'ai mis en place des workflows Power Automate permettant d'automatiser l'ensemble du cycle de validation documentaire.",
-        "Les solutions s'appuyaient sur des intégrations avec Excel et Power BI pour récupérer et exploiter les données, ainsi que sur la génération automatique de documents PDF et le suivi en temps réel."
+        "Mise en place de workflows Power Automate pour automatiser le cycle de validation.",
+        "Création d'une application Power Apps pour centraliser les demandes et le suivi.",
+        "Intégrations avec Excel et Power BI pour suivre l'avancement et piloter les KPI."
       ],
       results: [
-        "Les processus documentaires sont devenus plus fiables et plus transparents.",
-        "Les délais de validation ont été réduits, la traçabilité améliorée et les équipes disposent d'une vision claire de l'avancement des demandes."
+        "Validation plus rapide et traçabilité renforcée.",
+        "Vision claire de l'état des demandes et réduction des tâches manuelles."
       ],
-      stack: ["Power Automate", "Excel", "Power BI", "Microsoft 365"]
+      stack: ["Power Apps", "Power Automate", "Excel", "Power BI", "Microsoft 365"]
     },
     {
-      company: "Parker Hannifin",
+      sector: "Industrie 🏭",
       period: "04/2024 - 06/2024",
-      logo: "/img/parker-hannifin.png",
-      title: "Parker Hannifin - Optimisation et automatisation de processus RH",
+      title: "Automatisation de processus RH",
       context: [
-        "Les équipes RH de Parker Hannifin géraient certaines demandes (heures supplémentaires, intérimaires) via des processus manuels et peu structurés.",
-        "Les validations prenaient du temps, les informations étaient parfois incomplètes et le suivi opérationnel manquait de fiabilité.",
-        "Ces problématiques sont fréquentes dans les services RH lorsque les outils ne sont pas adaptés aux flux métiers réels."
+        "Demandes RH (heures supplémentaires, intérim) traitées via des échanges manuels.",
+        "Risque d'informations incomplètes et manque de suivi opérationnel.",
+        "Attente d'un process clair et traçable pour les validations."
       ],
       solution: [
-        "J'ai conçu et déployé des workflows automatisés Power Platform afin de digitaliser les demandes d'heures supplémentaires et la gestion des intérimaires.",
-        "Les processus ont été structurés autour de validations claires, avec des règles métiers adaptées aux contraintes RH."
+        "Digitalisation des demandes via Power Platform avec des règles métier adaptées.",
+        "Workflows de validation structurés pour sécuriser les décisions RH."
       ],
       results: [
-        "Les délais de traitement ont été réduits et les validations fiabilisées.",
-        "Les équipes RH disposent d'un suivi plus clair et plus fiable, avec moins d'erreurs administratives."
+        "Traitement plus rapide et réduction des erreurs administratives.",
+        "Suivi RH plus fiable avec des validations mieux cadrées."
       ],
       stack: ["Power Automate", "Power Platform"]
     },
     {
-      company: "ICS Productions",
+      sector: "Médias & Production 🎬",
       period: "Mission courte - 1 jour",
-      logo: "/img/ics.png",
-      title: "ICS Productions - Synchronisation des outils Microsoft via Power Automate",
+      title: "Synchronisation d'outils Microsoft",
       context: [
-        "ICS Productions utilisait Microsoft Planner et Outlook pour organiser le travail des équipes, sans synchronisation entre les deux outils.",
-        "Cela entraînait des oublis, un manque de visibilité sur les échéances et une organisation difficile à maintenir dans le temps.",
-        "C'est une problématique très courante dans les entreprises qui utilisent plusieurs outils Microsoft sans automatisation entre eux."
+        "Organisation du travail via Planner et Outlook sans synchronisation native.",
+        "Besoin d'aligner les tâches et les échéances sans changer les outils existants."
       ],
       solution: [
-        "J'ai mis en place une automatisation Power Automate permettant de synchroniser les tâches entre Planner et Outlook.",
-        "La solution a été conçue et déployée rapidement dans le cadre d'une mission courte et ciblée."
+        "Automatisation Power Automate pour synchroniser tâches et échéances.",
+        "Déploiement rapide dans un format de mission courte."
       ],
       results: [
-        "Les équipes bénéficient d'un meilleur suivi des tâches et des échéances.",
-        "Les risques d'oubli ont été réduits et l'organisation quotidienne est plus fiable."
+        "Meilleur suivi des tâches et diminution des oublis.",
+        "Organisation quotidienne plus fiable sans surcharge pour les équipes."
       ],
       stack: ["Power Automate", "Planner", "Outlook", "Microsoft 365"]
     }
   ],
   en: [
     {
-      company: "Danone",
+      sector: "Food & Beverage 🍏",
       period: "09/2025 - Present",
-      logo: "/img/danone.png",
-      title:
-        "Danone - Digitalization and automation of Power Platform business processes",
+      title: "Power Platform business process digitalization",
       context: [
-        "Danone operates in a large-enterprise environment where many business processes are still managed manually or semi-automatically.",
-        "Teams rely heavily on Microsoft 365, but handoffs between tools, approvals, and request tracking lack fluidity. This leads to time loss, error risk, and limited visibility into internal process status.",
-        "This situation is common in large organizations: the tools exist, but they are not used coherently."
+        "Multi-site organization with partially manual processes.",
+        "Heavy Microsoft 365 usage, but approvals and tracking spread across tools.",
+        "Goal: streamline requests, improve data reliability, and increase business visibility."
       ],
       solution: [
-        "I supported teams in designing and building Power Platform solutions, primarily using Power Apps and Power Automate.",
-        "The goal was to turn manual processes into simple, accessible digital flows tailored to business usage. In parallel, I worked on needs analysis, continuous process improvement, and user enablement."
+        "Designed Power Apps and Power Automate solutions tailored to field usage.",
+        "Structured workflows, clarified requirements, and supported teams for adoption."
       ],
       results: [
-        "Teams gained efficiency through smoother, better-structured processes.",
-        "Manual tasks were reduced, approvals strengthened, and process visibility improved. Users now have clearer tools that integrate more tightly with their Microsoft 365 environment."
+        "Clearer processes, shorter lead times, and stronger traceability.",
+        "Tools integrated into Microsoft 365 with more consistent usage."
       ],
       stack: ["Power Apps", "Power Automate", "Microsoft 365"]
     },
     {
-      company: "EDF",
+      sector: "Energy ⚡",
       period: "03/2025 - 08/2025",
-      logo: "/img/edf.png",
-      title: "EDF - Automation of document workflows and approvals",
+      title: "Automation of document workflows and approvals",
       context: [
-        "At EDF, some document processes relied on manual exchanges between multiple stakeholders, with little visibility into approval progress.",
-        "Documents moved via email or shared files, making tracking complex and increasing the risk of delays or omissions.",
-        "These issues are common whenever several teams must validate, approve, or track critical documents."
+        "Critical documents requiring multiple approval steps across teams.",
+        "Manual tracking via email or shared files with limited real-time visibility.",
+        "Need to secure the document chain and accelerate decisions."
       ],
       solution: [
-        "I implemented Power Automate workflows to automate the full document approval cycle.",
-        "The solutions leveraged integrations with Excel and Power BI for data retrieval and analysis, along with automatic PDF generation and real-time tracking."
+        "Built Power Automate workflows to automate the approval lifecycle.",
+        "Created a Power Apps application to centralize requests and tracking.",
+        "Integrated Excel and Power BI to track progress and monitor KPIs."
       ],
       results: [
-        "Document processes became more reliable and transparent.",
-        "Approval timelines shortened, traceability improved, and teams gained a clear view of request progress."
+        "Faster approvals and stronger traceability.",
+        "Clear view of request status and fewer manual tasks."
       ],
-      stack: ["Power Automate", "Excel", "Power BI", "Microsoft 365"]
+      stack: ["Power Apps", "Power Automate", "Excel", "Power BI", "Microsoft 365"]
     },
     {
-      company: "Parker Hannifin",
+      sector: "Industry 🏭",
       period: "04/2024 - 06/2024",
-      logo: "/img/parker-hannifin.png",
-      title: "Parker Hannifin - Optimization and automation of HR processes",
+      title: "HR process automation",
       context: [
-        "Parker Hannifin HR teams handled certain requests (overtime, temporary staff) through manual, loosely structured processes.",
-        "Approvals took time, information was sometimes incomplete, and operational tracking lacked reliability.",
-        "These challenges are common in HR when tools do not match real business flows."
+        "HR requests (overtime, temporary staff) handled via manual exchanges.",
+        "Risk of incomplete information and limited operational tracking.",
+        "Need for clear and traceable validation workflows."
       ],
       solution: [
-        "I designed and deployed automated Power Platform workflows to digitize overtime requests and temp worker management.",
-        "Processes were structured around clear approvals and business rules aligned with HR constraints."
+        "Digitized requests with Power Platform and tailored business rules.",
+        "Structured approval workflows to secure HR decisions."
       ],
       results: [
-        "Processing times were reduced and approvals became more reliable.",
-        "HR teams gained clearer, more dependable tracking with fewer administrative errors."
+        "Faster processing and fewer administrative errors.",
+        "More reliable HR tracking with clearer validations."
       ],
       stack: ["Power Automate", "Power Platform"]
     },
     {
-      company: "ICS Productions",
+      sector: "Media & Production 🎬",
       period: "Short engagement - 1 day",
-      logo: "/img/ics.png",
-      title: "ICS Productions - Syncing Microsoft tools with Power Automate",
+      title: "Microsoft tools synchronization",
       context: [
-        "ICS Productions used Microsoft Planner and Outlook to organize team work, without synchronization between the two tools.",
-        "This led to forgotten tasks, limited visibility on deadlines, and organization that was hard to maintain over time.",
-        "This is a common issue in companies using multiple Microsoft tools without automation between them."
+        "Work organized in Planner and Outlook without native synchronization.",
+        "Need to align tasks and deadlines without changing tools."
       ],
       solution: [
-        "I set up a Power Automate automation to synchronize tasks between Planner and Outlook.",
-        "The solution was designed and delivered quickly as part of a short, focused engagement."
+        "Power Automate flow to sync tasks and deadlines.",
+        "Rapid delivery in a short engagement format."
       ],
       results: [
-        "Teams gained better tracking of tasks and deadlines.",
-        "The risk of omissions was reduced and daily organization became more reliable."
+        "Better task tracking and fewer missed deadlines.",
+        "More reliable daily organization with minimal overhead."
       ],
       stack: ["Power Automate", "Planner", "Outlook", "Microsoft 365"]
     }

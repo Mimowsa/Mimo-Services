@@ -88,12 +88,10 @@
   border: 1px solid rgba(11, 22, 35, 0.06);
 }
 
-.projectList :global(.card) {
-  margin-bottom: 28px;
-}
-
-.projectList :global(.card:last-child) {
-  margin-bottom: 0;
+.grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .cta {
@@ -119,5 +117,78 @@
 @media (max-width: 600px) {
   .projectList :global(.container) {
     padding: 20px;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 22, 35, 0.55);
+  backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 50;
+}
+
+.modal {
+  width: min(920px, 100%);
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  box-shadow: 0 24px 60px rgba(11, 22, 35, 0.2);
+  border: 1px solid rgba(11, 22, 35, 0.08);
+  display: grid;
+  gap: 18px;
+  max-height: min(88vh, 820px);
+  overflow: auto;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.modalHeader h3 {
+  margin-top: 8px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.modalClose {
+  border: 1px solid rgba(11, 22, 35, 0.1);
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modalContent {
+  display: grid;
+  gap: 18px;
+  color: var(--color-slate);
+}
+
+.modalContent h4 {
+  color: var(--color-ink);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+  .modal {
+    padding: 22px 20px;
   }
 }

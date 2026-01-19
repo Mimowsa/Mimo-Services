@@ -17,7 +17,7 @@ export const content = {
       }
     },
     footer: {
-      tagline: "Freelance Power Platform à Paris, expert Power Apps et Power Automate.",
+      tagline: "Freelance Power Platform à Paris, Power Apps et Power Automate.",
       links: {
         projects: "Mes projets",
         about: "À propos",
@@ -25,7 +25,7 @@ export const content = {
       },
       meta: {
         location: "Paris / Île-de-France",
-        availability: "Disponibilités: À temps plein"
+        availability: "Disponibilités: À temps partiel"
       },
       copyright: "Tous droits réservés."
     },
@@ -36,7 +36,7 @@ export const content = {
         lead: "Automatisation rapide, fiable et adaptée pour vos équipes.",
         imageAlt:
           "Schéma de flux Power Platform reliant Power Apps et Power Automate",
-        ctaPrimary: "Demander un audit Power Platform",
+        ctaPrimary: "Planifier un échange",
         ctaSecondary: "Voir les projets"
       },
       stats: {
@@ -70,7 +70,7 @@ export const content = {
           "Mes missions sont cadrées autour d'objectifs clairs : réduction des délais, fiabilité des données et meilleure collaboration. Chaque livraison est accompagnée d'un plan d'usage et de documentation.",
         metrics: [
           {
-            value: "Jusqu'à 50%",
+            value: "Jusqu'à 90%",
             label: "Gain de temps selon les processus automatisés"
           },
           {
@@ -110,7 +110,7 @@ export const content = {
         eyebrow: "Contact",
         title: "Parlons de votre projet Power Platform",
         lead:
-          "Besoin d'une solution Power Apps ou Power Automate ? Je réponds sous 48h avec une proposition d'approche.",
+          "Besoin d'une solution Power Apps ou Power Automate ?",
         button: "Planifier un échange"
       }
     },
@@ -152,8 +152,8 @@ export const content = {
           "Mon approche est orientée valeur métier: comprendre le besoin avant d'automatiser, simplifier avant de complexifier, et livrer des solutions réellement utilisées.",
         statLabel: "de temps gagné",
         statPrefix: "Jusqu'à",
-        statValue: "50%",
-        statAriaLabel: "Jusqu'à 50% de temps gagné"
+        statValue: "90%",
+        statAriaLabel: "Jusqu'à 90% de temps gagné"
       },
       credibility: {
         eyebrow: "Crédibilité",
@@ -199,9 +199,10 @@ export const content = {
       heroTitle: "Mes projets",
       heroKicker: {
         prefix: "Jusqu'à ",
-        emph: "50 %",
-        suffix: " de temps gagné grâce à la Power Platform"
+        emph: "90 %",
+        suffix: " de gain de temps selon les processus automatisés"
       },
+      closeLabel: "Fermer la fenêtre du projet",
       cta: {
         eyebrow: "Votre contexte",
         title: "Besoin d'une automatisation Microsoft 365 ?",
@@ -211,9 +212,10 @@ export const content = {
       }
     },
     projectCard: {
-      context: "Contexte client",
-      solution: "Solution mise en place",
-      results: "Résultats et bénéfices"
+      context: "Contexte de la mission 🧭",
+      solution: "Solution mise en place 🛠️",
+      results: "Résultats et bénéfices ✅",
+      more: "Voir la mission"
     }
   },
   en: {
@@ -232,7 +234,7 @@ export const content = {
       }
     },
     footer: {
-      tagline: "Freelance Power Platform in Paris, Power Apps and Power Automate expert.",
+      tagline: "Freelance Power Platform in Paris, Power Apps and Power Automate.",
       links: {
         projects: "Projects",
         about: "About",
@@ -240,7 +242,7 @@ export const content = {
       },
       meta: {
         location: "Paris / Île-de-France",
-        availability: "Availability: Full-time"
+        availability: "Availability: Part-time"
       },
       copyright: "All rights reserved."
     },
@@ -251,7 +253,7 @@ export const content = {
         lead: "Fast, reliable automation tailored to your teams.",
         imageAlt:
           "Power Platform flow diagram linking Power Apps and Power Automate",
-        ctaPrimary: "Request a Power Platform audit",
+        ctaPrimary: "Request a Power Platform assessment",
         ctaSecondary: "View projects"
       },
       stats: {
@@ -285,7 +287,7 @@ export const content = {
           "My engagements are structured around clear objectives: shorter cycles, reliable data, and better collaboration. Each delivery includes an adoption plan and documentation.",
         metrics: [
           {
-            value: "Up to 50%",
+            value: "Up to 90%",
             label: "Time saved depending on automated processes"
           },
           {
@@ -367,8 +369,8 @@ export const content = {
           "My approach focuses on business value: understand before automating, simplify before adding complexity, and deliver solutions teams truly use.",
         statLabel: "time saved",
         statPrefix: "Up to",
-        statValue: "50%",
-        statAriaLabel: "Up to 50% time saved"
+        statValue: "90%",
+        statAriaLabel: "Up to 90% time saved"
       },
       credibility: {
         eyebrow: "Credibility",
@@ -414,9 +416,10 @@ export const content = {
       heroTitle: "Projects",
       heroKicker: {
         prefix: "Up to ",
-        emph: "50%",
-        suffix: " time saved thanks to Power Platform"
+        emph: "90%",
+        suffix: " time saved depending on automated processes"
       },
+      closeLabel: "Close project dialog",
       cta: {
         eyebrow: "Your context",
         title: "Need Microsoft 365 automation?",
@@ -426,9 +429,10 @@ export const content = {
       }
     },
     projectCard: {
-      context: "Client context",
-      solution: "Solution delivered",
-      results: "Results and benefits"
+      context: "Mission context 🧭",
+      solution: "Solution delivered 🛠️",
+      results: "Results and benefits ✅",
+      more: "View details"
     }
   }
 } as const;

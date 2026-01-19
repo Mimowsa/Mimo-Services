@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/app/components/ProjectCard.module.css";
 import type { Project } from "@/data/projects";
 
@@ -6,52 +5,23 @@ type ProjectLabels = {
   context: string;
   solution: string;
   results: string;
+  more: string;
 };
 
 export default function ProjectCard({
   project,
-  labels
+  labels,
+  onOpen
 }: {
   project: Project;
   labels: ProjectLabels;
+  onOpen: () => void;
 }) {
   return (
     <article className={`card ${styles.card}`}>
       <div className={styles.header}>
-        <div>
-          <p className="eyebrow">{project.company}</p>
-          <h3 className={styles.title}>{project.title}</h3>
-          <p className={styles.period}>{project.period}</p>
-        </div>
-        <div className={styles.logoWrap}>
-          <Image
-            src={project.logo}
-            alt={`Logo ${project.company}`}
-            width={160}
-            height={80}
-            className={styles.logo}
-          />
-        </div>
-      </div>
-      <div className={styles.content}>
-        <div>
-          <h4 className={styles.label}>{labels.context}</h4>
-          {project.context.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-        <div>
-          <h4 className={styles.label}>{labels.solution}</h4>
-          {project.solution.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
-        <div>
-          <h4 className={styles.label}>{labels.results}</h4>
-          {project.results.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
+        <p className="eyebrow">{project.sector}</p>
+        <h3 className={styles.title}>{project.title}</h3>
       </div>
       <div className={styles.tags}>
         {project.stack.map((item) => (
@@ -60,6 +30,15 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
+      <button
+        type="button"
+        className={styles.openButton}
+        onClick={onOpen}
+        aria-label={labels.more}
+      >
+        <span>{labels.more}</span>
+        <span className={styles.icon} aria-hidden />
+      </button>
     </article>
   );
 }
