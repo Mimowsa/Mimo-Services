@@ -212,9 +212,9 @@ export const content = {
       }
     },
     projectCard: {
-      context: "Contexte de la mission 🧭",
-      solution: "Solution mise en place 🛠️",
-      results: "Résultats et bénéfices ✅",
+      context: "Contexte de la mission",
+      solution: "Solution mise en place",
+      results: "Résultats et bénéfices",
       more: "Voir la mission"
     }
   },
@@ -429,9 +429,9 @@ export const content = {
       }
     },
     projectCard: {
-      context: "Mission context 🧭",
-      solution: "Solution delivered 🛠️",
-      results: "Results and benefits ✅",
+      context: "Mission context",
+      solution: "Solution delivered",
+      results: "Results and benefits",
       more: "View details"
     }
   }

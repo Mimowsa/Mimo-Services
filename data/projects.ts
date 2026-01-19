@@ -12,7 +12,7 @@ export type Project = {
 const projectsByLocale: Record<Locale, Project[]> = {
   fr: [
     {
-      sector: "Agroalimentaire 🍏",
+      sector: "Agroalimentaire",
       title: "Digitalisation de processus métiers Power Platform",
       context: [
         "Organisation multi-sites avec des processus encore partiellement manuels.",
@@ -30,7 +30,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Apps", "Power Automate", "Microsoft 365"]
     },
     {
-      sector: "Énergie ⚡",
+      sector: "Énergie",
       title: "Automatisation des flux documentaires et validations",
       context: [
         "Documents critiques nécessitant plusieurs étapes de validation entre équipes.",
@@ -49,7 +49,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Apps", "Power Automate", "Excel", "Power BI", "Microsoft 365"]
     },
     {
-      sector: "Industrie 🏭",
+      sector: "Industrie",
       title: "Automatisation de processus RH",
       context: [
         "Demandes RH (heures supplémentaires, intérim) traitées via des échanges manuels.",
@@ -67,7 +67,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Automate", "Power Platform"]
     },
     {
-      sector: "Médias & Production 🎬",
+      sector: "Médias & Production",
       title: "Synchronisation d'outils Microsoft",
       context: [
         "Organisation du travail via Planner et Outlook sans synchronisation native.",
@@ -86,7 +86,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
   ],
   en: [
     {
-      sector: "Food & Beverage 🍏",
+      sector: "Food & Beverage",
       title: "Power Platform business process digitalization",
       context: [
         "Multi-site organization with partially manual processes.",
@@ -104,7 +104,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Apps", "Power Automate", "Microsoft 365"]
     },
     {
-      sector: "Energy ⚡",
+      sector: "Energy",
       title: "Automation of document workflows and approvals",
       context: [
         "Critical documents requiring multiple approval steps across teams.",
@@ -123,7 +123,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Apps", "Power Automate", "Excel", "Power BI", "Microsoft 365"]
     },
     {
-      sector: "Industry 🏭",
+      sector: "Industry",
       title: "HR process automation",
       context: [
         "HR requests (overtime, temporary staff) handled via manual exchanges.",
@@ -141,7 +141,7 @@ const projectsByLocale: Record<Locale, Project[]> = {
       stack: ["Power Automate", "Power Platform"]
     },
     {
-      sector: "Media & Production 🎬",
+      sector: "Media & Production",
       title: "Microsoft tools synchronization",
       context: [
         "Work organized in Planner and Outlook without native synchronization.",
