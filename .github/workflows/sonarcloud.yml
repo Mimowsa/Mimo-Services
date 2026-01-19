@@ -41,7 +41,7 @@ jobs:
         with:
           args: >-
             -Dsonar.organization=mimowsa
-            -Dsonar.projectKey=mimo-services
+            -Dsonar.projectKey=Mimowsa_Mimo-Services
             -Dsonar.sources=app,data
             -Dsonar.exclusions=**/node_modules/**,**/.next/**,**/out/**
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
