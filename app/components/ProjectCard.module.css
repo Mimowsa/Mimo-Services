@@ -28,10 +28,6 @@
   font-size: 1.4rem;
 }
 
-.period {
-  color: var(--color-steel);
-  font-size: 0.95rem;
-}
 
 .content {
   display: grid;

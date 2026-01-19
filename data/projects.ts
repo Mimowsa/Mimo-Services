@@ -2,7 +2,6 @@ import type { Locale } from "@/app/i18n/locale";
 
 export type Project = {
   sector: string;
-  period: string;
   title: string;
   context: string[];
   solution: string[];
@@ -14,7 +13,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
   fr: [
     {
       sector: "Agroalimentaire 🍏",
-      period: "09/2025 - Actuel",
       title: "Digitalisation de processus métiers Power Platform",
       context: [
         "Organisation multi-sites avec des processus encore partiellement manuels.",
@@ -33,7 +31,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Énergie ⚡",
-      period: "03/2025 - 08/2025",
       title: "Automatisation des flux documentaires et validations",
       context: [
         "Documents critiques nécessitant plusieurs étapes de validation entre équipes.",
@@ -53,7 +50,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Industrie 🏭",
-      period: "04/2024 - 06/2024",
       title: "Automatisation de processus RH",
       context: [
         "Demandes RH (heures supplémentaires, intérim) traitées via des échanges manuels.",
@@ -72,7 +68,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Médias & Production 🎬",
-      period: "Mission courte - 1 jour",
       title: "Synchronisation d'outils Microsoft",
       context: [
         "Organisation du travail via Planner et Outlook sans synchronisation native.",
@@ -92,7 +87,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
   en: [
     {
       sector: "Food & Beverage 🍏",
-      period: "09/2025 - Present",
       title: "Power Platform business process digitalization",
       context: [
         "Multi-site organization with partially manual processes.",
@@ -111,7 +105,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Energy ⚡",
-      period: "03/2025 - 08/2025",
       title: "Automation of document workflows and approvals",
       context: [
         "Critical documents requiring multiple approval steps across teams.",
@@ -131,7 +124,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Industry 🏭",
-      period: "04/2024 - 06/2024",
       title: "HR process automation",
       context: [
         "HR requests (overtime, temporary staff) handled via manual exchanges.",
@@ -150,7 +142,6 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       sector: "Media & Production 🎬",
-      period: "Short engagement - 1 day",
       title: "Microsoft tools synchronization",
       context: [
         "Work organized in Planner and Outlook without native synchronization.",

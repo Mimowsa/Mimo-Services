@@ -327,7 +327,7 @@ export const content = {
         eyebrow: "Contact",
         title: "Let's talk about your Power Platform project",
         lead:
-          "Need a Power Apps or Power Automate solution? I reply within 48h with a tailored approach.",
+          "Need a Power Apps or Power Automate solution?",
         button: "Schedule a call"
       }
     },
